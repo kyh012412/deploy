@@ -16,3 +16,7 @@ app.listen(3000, (req, res) => {
 app.get('', (req, res) => {
   res.send('hi');
 });
+
+app.get('/hi', (req, res) => {
+  res.send('hihi');
+});
