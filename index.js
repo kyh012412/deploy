@@ -9,14 +9,14 @@ app.use(
   })
 );
 
-app.listen(3000, (req, res) => {
-  console.log('server listening in port 3000');
+app.get('/hi', (req, res) => {
+  res.send('hihi');
 });
 
 app.get('', (req, res) => {
   res.send('hi');
 });
 
-app.get('/hi', (req, res) => {
-  res.send('hihi');
+app.listen(3000, (req, res) => {
+  console.log('server listening in port 3000');
 });
